@@ -1,0 +1,189 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="edu.ufl.cise.os.p2.P2Activity">
+
+    <TextView
+        android:id="@+id/algorithm"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_marginStart="-45dp"
+        android:layout_marginBottom="116dp"
+        android:layout_toEndOf="@+id/textView3"
+        android:text="Algorithm: " />
+
+    <EditText
+        android:id="@+id/alloc_view"
+        android:layout_width="93dp"
+        android:layout_height="45dp"
+        android:layout_alignTop="@+id/allocation_size"
+        android:layout_alignBottom="@+id/textView4"
+        android:layout_alignParentEnd="true"
+        android:layout_marginTop="-3dp"
+        android:layout_marginEnd="57dp"
+        android:layout_marginBottom="-100dp"
+        android:hint="4"
+        android:inputType="number"
+        android:text="4"
+        android:textAlignment="center"
+        android:textColor="@color/colorPrimaryDark" />
+
+    <TextView
+        android:id="@+id/allocation_size"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_marginStart="-59dp"
+        android:layout_marginBottom="77dp"
+        android:layout_toEndOf="@+id/textView3"
+        android:text="Allocation Size:" />
+
+    <Button
+        android:id="@+id/addButton"
+        android:layout_width="139dp"
+        android:layout_height="38dp"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentBottom="true"
+        android:layout_marginStart="45dp"
+        android:layout_marginBottom="1dp"
+        android:background="#6be868"
+        android:text="Add Memory" />
+
+    <TextView
+        android:id="@+id/use_view"
+        android:layout_width="61dp"
+        android:layout_height="17dp"
+        android:layout_alignTop="@+id/textView4"
+        android:layout_alignBottom="@+id/textView4"
+        android:layout_alignParentEnd="true"
+        android:layout_marginTop="-1dp"
+        android:layout_marginEnd="71dp"
+        android:layout_marginBottom="3dp"
+        android:text="0"
+        android:textAlignment="center" />
+
+    <TextView
+        android:id="@+id/free_view"
+        android:layout_width="61dp"
+        android:layout_height="17dp"
+        android:layout_above="@+id/submitButton"
+        android:layout_alignParentEnd="true"
+        android:layout_marginEnd="73dp"
+        android:layout_marginBottom="152dp"
+        android:text="0"
+        android:textAlignment="center" />
+
+    <ScrollView
+        android:id="@+id/scrollView2"
+        android:layout_width="wrap_content"
+        android:layout_height="220dp"
+        android:layout_above="@+id/submitButton"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentEnd="true"
+        android:layout_marginStart="36dp"
+        android:layout_marginTop="83dp"
+        android:layout_marginEnd="38dp"
+        android:layout_marginBottom="225dp">
+
+        <LinearLayout
+            android:id="@+id/button_layout"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_marginStart="8dp"
+            android:layout_marginTop="8dp"
+            android:layout_marginEnd="8dp"
+            android:layout_marginBottom="8dp"
+            android:orientation="vertical"
+            app:layout_constraintBottom_toTopOf="@+id/editText"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/contentsLabel"></LinearLayout>
+    </ScrollView>
+
+    <TextView
+        android:id="@+id/textView4"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_marginStart="-35dp"
+        android:layout_marginBottom="154dp"
+        android:layout_toEndOf="@+id/textView3"
+        android:text="In Use: " />
+
+    <TextView
+        android:id="@+id/textView3"
+        android:layout_width="31dp"
+        android:layout_height="20dp"
+        android:layout_alignTop="@+id/free_view"
+        android:layout_alignParentStart="true"
+        android:layout_marginStart="83dp"
+        android:text="Free:" />
+
+    <Button
+        android:id="@+id/submitButton"
+        android:layout_width="139dp"
+        android:layout_height="38dp"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentBottom="true"
+        android:layout_marginEnd="31dp"
+        android:layout_marginBottom="1dp"
+        android:background="#e65b5b"
+        android:text="Clear" />
+
+    <TextView
+        android:id="@+id/textView"
+        android:layout_width="71dp"
+        android:layout_height="20dp"
+        android:layout_alignTop="@+id/textView"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentBottom="true"
+        android:layout_marginStart="67dp"
+        android:layout_marginTop="0dp"
+        android:layout_marginBottom="228dp"
+        android:text="Fragments:" />
+
+    <TextView
+        android:id="@+id/frag_view"
+        android:layout_width="61dp"
+        android:layout_height="17dp"
+        android:layout_above="@+id/submitButton"
+        android:layout_alignTop="@+id/textView"
+        android:layout_alignParentEnd="true"
+        android:layout_marginTop="2dp"
+        android:layout_marginEnd="72dp"
+        android:layout_marginBottom="190dp"
+        android:text="TextView"
+        android:textAlignment="center"
+        tools:text="0" />
+
+    <TextView
+        android:id="@+id/textView8"
+        android:layout_width="154dp"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="32dp"
+        android:fontFamily="sans-serif"
+        android:text="Memory Manager"
+        android:textAlignment="center"
+        android:textSize="18sp"
+        android:textStyle="bold" />
+
+    <Spinner
+        android:id="@+id/spinner"
+        android:layout_width="104dp"
+        android:layout_height="17dp"
+        android:layout_above="@+id/submitButton"
+        android:layout_alignTop="@+id/algorithm"
+        android:layout_alignEnd="@+id/scrollView2"
+        android:layout_marginTop="0dp"
+        android:layout_marginEnd="-15dp"
+        android:layout_marginBottom="73dp" />
+
+</RelativeLayout>
